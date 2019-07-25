@@ -1,0 +1,5 @@
+{
+    "tableName": "wwdesigner-models",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S"
+}

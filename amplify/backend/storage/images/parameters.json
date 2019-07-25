@@ -1,0 +1,13 @@
+{
+    "bucketName": "wwwdesigner1d3e4251d46845f59e73a83bcc942f16",
+    "authPolicyName": "s3_amplify_687c5b93",
+    "unauthPolicyName": "s3_amplify_687c5b93",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": ""
+}

@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Amplify, { Storage } from 'aws-amplify';
+import awsmobile from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react';
+import Editor from "./components/edit/Editor";
+import List from "./components/list/List";
+import {Switch} from "react-router-dom";
+Amplify.configure(awsmobile);
+Storage.configure({ level: 'public' });
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <Switch>
+          <Editor path='/:id' />
+          <List path='/' />
+        </Switch>
     );
   }
 }
 
-export default App;
+export default withAuthenticator(App);

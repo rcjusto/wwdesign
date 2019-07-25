@@ -1,14 +1,92 @@
-body {
+html, body, #root {
+  height: 100% !important;
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bar-block {
+  margin: 2px 0;
+}
+.bar-block-next {
+  margin: 12px 0 2px 0;
+}
+.bar-block-name {
+  padding: 4px 6px 0 6px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 13pt;
+  text-transform: uppercase;
+}
+.bar-block-name .right-link {
+  float: right;
+  margin-right: 8px;
+  color: #ffffff;
+  font-size: 10pt;
+  margin-top: 3px;
+}
+.block-title .dropdown, .tree .dropdown {
+  float: right;
+  margin-left: 5px;
+}
+.tree .dropdown button, .block-title .dropdown button, .tree .dropdown.open button, .block-title .dropdown.open button {
+  border: 0 none;
+  background: none;
+  box-shadow: none;
+}
+.tree .dropdown .caret {
+  display: none!important;
+}
+.tree .selected {
+  background-color: #2b669a;
+  color: #ffffff;
+}
+.tree a {
+  color: #333333;
+}
+.tree .selected a {
+  color: #ffffff;
+}
+.block-title .dropdown button, .block-title .dropdown.open button {
+  color:#ffffff;
+}
+.dropdown-menu {
+  min-width: 80px;
+}
+.dropdown-menu a {
+  color: #333333 !important;
+}
+.hoverable:hover {
+  background-color: #eeeeee;
+}
+.no-underline:hover {
+  text-decoration: none;
+}
+.properties-block .form-control {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.properties-block div.form-control {
+  padding-top: 6px;
+}
+h4.modal-title {
+  font-size: 16pt;
+}
+.input-dd .btn {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.input-dd .dropdown-menu > li > a {
+  text-align: right;
+}
+.drop-here {
+  border-bottom: 2px solid #000000!important;
+}
+.header-action:hover {
+  background-color: #204d74;
 }

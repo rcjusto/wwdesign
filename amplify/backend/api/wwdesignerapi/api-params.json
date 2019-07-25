@@ -1,0 +1,54 @@
+{
+    "paths": [
+        {
+            "name": "/projects",
+            "lambdaFunction": "wwwdesigner4a53f5f5",
+            "privacy": {
+                "private": true,
+                "auth": "rw"
+            }
+        },
+        {
+            "name": "/models",
+            "lambdaFunction": "wwwdesigner787e682a",
+            "privacy": {
+                "private": true,
+                "auth": "rw"
+            }
+        }
+    ],
+    "resourceName": "wwdesignerapi",
+    "apiName": "wwdesignerapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "wwwdesigner4a53f5f5"
+        },
+        {
+            "lambdaFunction": "wwwdesigner787e682a"
+        }
+    ],
+    "privacy": {
+        "auth": 2,
+        "unauth": 0,
+        "authRoleName": "wwwdesigner-20190302103108-authRole",
+        "unAuthRoleName": "wwwdesigner-20190302103108-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "wwwdesigner4a53f5f5",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "wwwdesigner787e682a",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
