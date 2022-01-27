@@ -17,7 +17,7 @@
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
-    "three": "^0.92.0",
+    "three": "^0.137.0",
     "three-orbit-controls": "^82.1.0",
     "uuid": "^3.3.2"
   },
